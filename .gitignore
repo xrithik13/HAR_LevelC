@@ -1,0 +1,13 @@
+# Ignore Jupyter auto-checkpoints
+.ipynb_checkpoints/
+
+# Ignore local Python cache files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment
+venv/
+
+# Ignore temporary files
+download_real_har.py
+*.zip
