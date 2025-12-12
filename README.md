@@ -1,96 +1,158 @@
-Human Activity Recognition (HAR) – Synthetic Accelerometer Project
+📌 Human Activity Recognition (HAR) – Synthetic Accelerometer ML Project
 
-This project simulates how a wearable device (like a smartwatch) detects human activities using accelerometer signals.
-Instead of using a large external dataset, the script generates synthetic but realistic time-series sensor data for three activities:
 
-Walking
 
-Running
+This project simulates accelerometer data for walking, running, and sitting, extracts features from the signals, and trains a Random Forest classifier to recognize the activity.
 
-Sitting
 
-The goal is to understand the full ML workflow behind activity recognition systems — from raw signals → feature extraction → model training → evaluation.
 
-🌟 What This Project Does
+It demonstrates the complete ML pipeline used in IoT and wearable devices (like smartwatches).
 
-Generates 3-axis accelerometer data with realistic patterns
 
-Splits data into fixed-size windows
 
-Extracts meaningful statistical features from each window
+📊 Confusion Matrix
+
+
+
+This shows how accurately the model classifies activities:
+
+
+
+🚀 What This Project Does
+
+
+
+Generates synthetic accelerometer signals
+
+
+
+Extracts meaningful statistical features
+
+
 
 Trains a Random Forest classifier
 
-Evaluates performance using a confusion matrix
-
-Saves the trained model (har_levelc_model.joblib)
-
-Even though the dataset is synthetic, the overall process closely matches real HAR systems.
-
-📂 Project Structure
-HAR_LevelC/
-│ har_levelc.py                # Main ML pipeline (data → features → training)
-│ README.md
-│
-├── outputs/
-│   └── confusion_matrix.png   # Saved evaluation plot
-│
-└── models/
-    └── har_levelc_model.joblib   # Saved ML model
-
-📈 Results
-
-The model typically achieves 95–100% accuracy, since the activities have distinct patterns.
-
-A confusion matrix is saved here:
-
-outputs/confusion_matrix.png
 
 
-It shows how well the model distinguishes between walking, running, and sitting.
+Evaluates performance (accuracy + confusion matrix)
+
+
+
+Saves the trained model for later use
+
+
 
 🧠 Skills Demonstrated
 
-This project helped me understand:
 
-How accelerometer data looks for different activities
 
-How to extract useful features from time-series data
+Time-series feature extraction
 
-How to train and evaluate ML classifiers
 
-How to visualize correctness using a confusion matrix
 
-How to save ML models
+ML model training
 
-How to structure a clean, reproducible ML project
 
-This builds foundational knowledge for real HAR systems and IoT/embedded ML work.
 
-▶️ How to Run the Project
-Install required packages:
+Visualization with Seaborn
+
+
+
+Working with Jupyter Notebooks
+
+
+
+Creating reproducible ML pipelines
+
+
+
+Git \& GitHub workflow
+
+
+
+Organizing ML projects for portfolios
+
+
+
+🧩 Project Structure
+
+HAR\_LevelC/
+
+│ har\_levelc.ipynb
+
+│ README.md
+
+│ .gitignore
+
+│
+
+├── outputs/
+
+│   └── confusion\_matrix.png
+
+│
+
+└── models/
+
+&nbsp;   └── har\_levelc\_model.joblib
+
+
+
+▶️ How to Run
+
+
+
+Install dependencies:
+
+
+
 pip install numpy pandas matplotlib seaborn scikit-learn joblib
 
-Run:
-python har_levelc.py
 
 
-The model and confusion matrix image will be generated automatically.
 
-💡 Why This Project Matters
 
-Human Activity Recognition is widely used in:
+Run inside Jupyter Notebook:
+
+
+
+jupyter notebook
+
+
+
+
+
+Open har\_levelc.ipynb and run all cells.
+
+
+
+🌟 Why This Project Is Valuable
+
+
+
+Human Activity Recognition is used in:
+
+
 
 Fitness trackers
 
+
+
+Smartwatches
+
+
+
 Health monitoring
 
-Gesture recognition
 
-Wearable devices
 
-Smart home systems
+IoT devices
 
-IoT and embedded ML applications
 
-This project gives a beginner-friendly, end-to-end understanding of how such systems work internally — making it a strong addition to a portfolio or internship application.
+
+Motion analytics
+
+
+
+This project teaches the full ML cycle used in these real-world systems
+
